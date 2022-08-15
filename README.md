@@ -66,7 +66,7 @@ Tienes que consultar todos los `character`, `locations` y `episodes` de [https:/
 - Maximiliano Minutillo | [LinkedIn Profile](https://www.linkedin.com/in/maximiliano-minutillo/)
 - email: maximilminu@gmail.com
 
-
+```bash
  ██████ ██   ██ ██ ██████   █████  ██   ██ 
 ██      ██   ██ ██ ██   ██ ██   ██  ██ ██  
 ██      ███████ ██ ██████  ███████   ███   
