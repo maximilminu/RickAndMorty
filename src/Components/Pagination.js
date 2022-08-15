@@ -17,7 +17,7 @@ const Paginationn = ({ nPages, currentPage, setCurrentPage }) => {
 
     return (
         <Pagination className='pagination-container'>
-                <Pagination.First />
+                {/* <Pagination.First /> */}
                 <Pagination.Prev onClick={prevPage} />
                 {/* <Pagination.Item>{1}</Pagination.Item>
             <Pagination.Ellipsis />
@@ -31,7 +31,7 @@ const Paginationn = ({ nPages, currentPage, setCurrentPage }) => {
             <Pagination.Ellipsis />
             <Pagination.Item>{20}</Pagination.Item> */}
                 <Pagination.Next onClick={nextPage} />
-                <Pagination.Last />
+                {/* <Pagination.Last /> */}
         </Pagination>
     )
 }

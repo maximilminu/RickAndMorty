@@ -10,7 +10,7 @@ const store = configureStore({
     reducer: {
         characters: charactersReducer,
         episode: episodeReducer,
-        locations: locationsReducer
+        locations: locationsReducer,
     }
 })
 

@@ -1,20 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import Figure from 'react-bootstrap/Figure';
 import "../Styles/index.css"
-import { useSelector, useDispatch } from "react-redux";
-// import { getSingleEpisode } from '../State/episodes';
 import axios from 'axios';
 
-const Card = ({ singleResult }) => {
+const Card = ({ singleResult,page }) => {
 
-    //HACE FALTA ARREGLAR EL FIRSTSEEN, NO SE COMO MANEJAR EL USEEFFECT CON EL REDUX
-
-    const dispatch = useDispatch()
-    const data = useSelector((state) => state)
-
-    const [episodeName, setepisodeName] = useState("")
-
-    // const [firstSeen, setFirstSeen] = useState("")
+    const [firstSeen, setFirstSeen] = useState("")
 
     const name = singleResult.name
     const location = singleResult.location.name
@@ -22,23 +13,12 @@ const Card = ({ singleResult }) => {
     const species = singleResult.species
     const url = singleResult.episode[0]
 
-    // console.log(firstSeen);
-
-
     useEffect(() => {
-        // dispatch(getSingleEpisode(url))
-        // axios.get(`${url}`)
-        //     .then((singleEpisode) => {
-        //         setepisodeName(singleEpisode)
-        //     })
-    }, [])
-
-
-    // console.log("DATAAAA", episodeName? episodeName: null);
-
- 
-    // const letterNameCounter = (name.toLowerCase()).replace(/[^c]/g, "").length
-    // const letterLocationCounter = (location.toLowerCase()).replace(/[^l]/g, "").length
+        axios.get(url)
+            .then((res) => {
+                setFirstSeen(res.data.name)
+            })
+    }, [page])
 
 
     return (
@@ -64,10 +44,10 @@ const Card = ({ singleResult }) => {
                     <h5>Last known location:</h5>
                     {location}
                 </div>
-                {/* <div className='character-section'>
+                <div className='character-section'>
                     <h5>First seen in:</h5>
-                    {episodeName? episodeName : null}
-                </div> */}
+                    {firstSeen}
+                </div>
 
             </div>
         </Figure>

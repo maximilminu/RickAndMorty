@@ -154,4 +154,33 @@ body {
 .btn-group-lg>.btn, .btn-lg {
     background: rgb(63, 139, 139);
     border-radius: 20px;
+    width: 70%;
 }
+
+.char-counter-container p {
+  color:  white;
+}
+
+.char-counter {
+  margin: 10px 0 0 5px;
+}
+
+.button-container {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+/* *******Episode Counter CSS********* */
+/* .tab-container {
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tab-container button {
+  margin-bottom: 20px;
+  width: 75%;
+} */

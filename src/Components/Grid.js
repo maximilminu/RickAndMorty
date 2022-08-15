@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from "react-redux";
 import Card from '../Commons/Card';
-// import Pagination from '../Commons/Pagination';
 import { getAllCharacters } from '../State/characters'
-import { getSingleEpisode } from '../State/episodes';
-
-
 import "../Styles/index.css"
-import Footer from './Footer';
-import Paginationn from './Paginationn';
+import Pagination from './Pagination';
 
 const Grid = () => {
 
@@ -19,10 +14,7 @@ const Grid = () => {
 
     useEffect(() => {
         dispatch(getAllCharacters(page))
-        // dispatch(getSingleEpisode(data.characters.results))
     }, [page])
-
-    // console.log("DATAAA",data.characters);
 
     return (
         <div>
@@ -30,19 +22,18 @@ const Grid = () => {
                 <div className='grid'>
                     {charactersData.results && charactersData.results.map((character, index) => {
                         return (
-                            <Card singleResult={character} key={index} />
+                            <Card singleResult={character} key={index} page={page} />
                         )
                     })}
                 </div>
             </section>
             <div className='pagination-container'>
                 {charactersData.results?
-                    <Paginationn nPages={charactersData.info.pages} currentPage={page} setCurrentPage={setPage} />
+                    <Pagination nPages={charactersData.info.pages} currentPage={page} setCurrentPage={setPage} />
                     :
                     null
                 }
             </div>
-                <Footer />
         </div>
     )
 }
