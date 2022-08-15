@@ -20,6 +20,7 @@ Tienes que consultar todos los `character`, `locations` y `episodes` de [https:/
     - para cada `episode`, indicar la cantidad y un listado con las `location` (`origin`) de todos los `character` que aparecieron en ese `episode` (sin repetir)
     - cuánto tardó el programa 👆 en total (desde inicio ejecución hasta entrega de resultados)
 - Output en formato `json` con esta estructura
+
 [
     {
         "exercise_name": "Char counter",
