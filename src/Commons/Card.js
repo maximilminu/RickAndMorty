@@ -42,11 +42,11 @@ const Card = ({ singleResult,page }) => {
                 </div>
                 <div className='character-section'>
                     <h5>Last known location:</h5>
-                    {location}
+                    <p>{location}</p>
                 </div>
                 <div className='character-section'>
                     <h5>First seen in:</h5>
-                    {firstSeen}
+                    <p>{firstSeen}</p>
                 </div>
 
             </div>

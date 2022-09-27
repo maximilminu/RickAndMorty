@@ -30,7 +30,7 @@ body {
 }
 
 .character-content {
-  padding: 0.75rem;
+  padding: 0.50rem 0rem 0.75rem 0.75rem;
   color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
@@ -38,19 +38,20 @@ body {
 }
 
 .character-section h4 {
-    font-weight: bold;
-    font-size: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
 }
+
 .character-section h5 {
-    font-weight: bold;
-    font-size: 18px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .character-section {
-    -webkit-box-pack: start;
-    justify-content: flex-start;
-    width: 100%;
-  }
+  justify-content: flex-start;
+  width: 100%;
+}
 
 .status-section {
   display: flex;
@@ -143,22 +144,23 @@ body {
 }
 
 .page-item.active .page-link {
-    background: rgb(85, 94, 94);
+  background: rgb(85, 94, 94);
 }
 
 /* *******CharCounter CSS********* */
 .char-counter-container {
-    margin: 60px 10% 0 10%;
+  margin: 60px 10% 0 10%;
 }
 
-.btn-group-lg>.btn, .btn-lg {
-    background: rgb(63, 139, 139);
-    border-radius: 20px;
-    width: 70%;
+.btn-group-lg > .btn,
+.btn-lg {
+  background: rgb(63, 139, 139);
+  border-radius: 20px;
+  width: 70%;
 }
 
 .char-counter-container p {
-  color:  white;
+  color: white;
 }
 
 .char-counter {
