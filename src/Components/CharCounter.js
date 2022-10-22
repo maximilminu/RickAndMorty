@@ -8,8 +8,6 @@ import { useSelector, useDispatch } from "react-redux";
 import axios from 'axios';
 import Footer from './Footer';
 
-
-
 const CharCounter = () => {
   const url = "https://rickandmortyapi.com/api/"
 
@@ -63,7 +61,7 @@ const CharCounter = () => {
         for (let i = 1; i <= LocationPages; i++) {
           await axios.get(`${url}location/?page=${i} `)
             .then((res) => {
-              console.log(res.data.results);
+              // console.log(res.data.results);
               res.data.results.map((location) => {
                 locations.push(location.name)
               })
