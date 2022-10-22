@@ -4,7 +4,6 @@ import { getAllCharacters } from '../State/characters'
 import { getAllEpisodes } from '../State/episodes';
 import { getAllLocations } from '../State/locations';
 
-
 const Footer = () => {
   const dispatch = useDispatch()
   const data = useSelector((state) => state)
