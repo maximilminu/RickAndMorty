@@ -5,7 +5,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const NavBar = () => {
-
   return (
     <Navbar bg="light" expand="lg">
       <Container>
