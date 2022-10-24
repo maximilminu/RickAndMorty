@@ -10,7 +10,6 @@ import Footer from './Footer';
 
 const CharCounter = () => {
   const url = "https://rickandmortyapi.com/api/"
-
   const dispatch = useDispatch()
   const data = useSelector((state) => state)
   const charactersPages = data.characters.info && data.characters.info.pages
