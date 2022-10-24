@@ -8,7 +8,6 @@ const Footer = () => {
   const dispatch = useDispatch()
   const data = useSelector((state) => state)
 
-
   useEffect(() => {
     dispatch(getAllCharacters())
     dispatch(getAllEpisodes())
